@@ -76,22 +76,22 @@ if let data = try? encoder.encode(employeeStructs) {
 ## Result
 Spoiler alert. The two are exactly the same ☺️
 ### Encoded EmployeeManagedObject
-Bytes `print(data as NSData)`
+Bytes - `print(data as NSData)`
 ```
 <5b7b226e 616d6522 3a224a6f 686e2053 6e6f7722 2c226973 46756c6c 54696d65 223a7472 75652c22 68697265 44617465 223a3537 32393232 3139302e 35373535 39353937 7d5d>
 ```
-JSON String `print(String(data: data, encoding: .utf8) ?? "")`
+JSON String - `print(String(data: data, encoding: .utf8) ?? "")`
 ```
 [{"name":"John Snow","isFullTime":true,"hireDate":572922190.57559597}]
 ```
 
 
 ### Encoded Employee
-Bytes `print(data as NSData)`
+Bytes - `print(data as NSData)`
 ```
 <5b7b226e 616d6522 3a224a6f 686e2053 6e6f7722 2c226973 46756c6c 54696d65 223a7472 75652c22 68697265 44617465 223a3537 32393232 3139302e 35373535 39353937 7d5d>
 ```
-JSON String `print(String(data: data, encoding: .utf8) ?? "")`
+JSON String - `print(String(data: data, encoding: .utf8) ?? "")`
 ```
 [{"name":"John Snow","isFullTime":true,"hireDate":572922190.57559597}]
 ```

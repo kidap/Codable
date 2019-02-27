@@ -48,10 +48,25 @@ let encoder = JSONEncoder()
 
 //Encoding managed objects
 if let data = try? encoder.encode(employeeManagedObjects) {
+    print("Encoded EmployeeManagedObject")
+    print(data as NSData)
     print(String(data: data, encoding: .utf8) ?? "")
 }
 
 //Encoding structs
 if let data = try? encoder.encode(employeeStructs) {
+    print("\n\nEncoded Employee")
+    print(data as NSData)
     print(String(data: data, encoding: .utf8) ?? "")
 }
+
+
+print("\n\nHex UTF8 bytes - Character")
+print("5b = [")
+print("7b = {")
+print("22 = \"")
+print("6e = n")
+print("61 = a")
+print("6d = m")
+print("65 = e")
+print("22 = \"")
